@@ -53,6 +53,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .registrate h4>img{
 	display: inline-block;
+	width: 126px;
 }
 p#reg{
 	margin-bottom: 20px;
@@ -82,10 +83,35 @@ p#reg{
 /***************************INFORMACION******************************/
 .informacion{
 	background-color: #f7b617; /*amarillo*/
+	
 }
 .info-marco{
 	border: 1px solid white;
 	margin: 5vh 0;
+}
+.informacion p{
+	font-size: 18px;
+	padding: 10px 0;
+}
+.informacion img{
+	width: 70%;
+	margin: 0 auto;
+	padding: 5vh;
+
+}
+.info-text{
+	width: 70%;
+	padding: 10vh 0;
+}
+.informacion h1, .informacion h3{
+	text-align: center;
+	padding: 5vh 0;
+}
+
+@media (max-width: 992px) { 
+	.info-marco{
+		margin: 20px;
+	}
 }
 
 
@@ -94,7 +120,26 @@ p#reg{
 	background-image: url(../img/conduce.jpg);
 	background-position: center;
 	background-size: cover;
-	height: 50vh;
+	height: 55vh;
+	padding: 0;
+}
+.conduce-col{
+	background-color: rgba(0,0,0, 0.5);
+	padding: 12vh 35px;
+	height: 100%;
+}
+.conduce-col h3{
+    margin: 10px 0;
+}
+.conduce button{
+	background-color: #f7b617; /*amarillo*/
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 10px 15px;
+	margin: 15px 0;
+	font-weight: bold;
+	font-size: 16px;
 }
 
 /******************************TARIFA*******************************/
@@ -103,9 +148,49 @@ p#reg{
 }
 
 /********************************FOOTER************************/
+.footer-fluid{
+	background-color: #2b2b2b; /*gris oscuro*/
+}
 footer{
 	background-color: #2b2b2b; /*gris oscuro*/
 }
 footer a, footer i{
 	color: white;
+}
+footer ul{
+    list-style:none;
+}
+footer ul>li{
+	font-size: 14px;
+	padding: 5px;
+
+}
+.footer-logo{
+	padding: 30px;
+	border-bottom: 1px solid white;
+}
+.links-row{
+	padding: 20px;
+	border-bottom: 1px solid white;
+	display: table;
+	width: 102%;
+}
+.fin-row{
+	padding: 20px;
+	text-align: center;
+}
+
+.links-row [class*="col-"]{
+	float: none;
+    display: table-cell;
+    vertical-align: bottom;
+}
+.store-footer img{
+	width: 50%;
+	margin-top: 20px;
+}
+@media (max-width: 992px) { 
+	.links-row [class*="col-"]{
+		display: inline;
+	}
 }
