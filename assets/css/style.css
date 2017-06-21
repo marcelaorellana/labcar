@@ -7,11 +7,24 @@ body{
 }
 h1, h2, h3, h4, h5, h6, p{
 	color: white;
+	padding: 0;
+	margin: 0;
 }
 
 
 /*************************NAV BAR*************************/
-
+.navbar{
+	margin: 0;
+	background-color: white;
+	padding: 25px 0;
+}
+.navbar-default .navbar-nav>li>a{
+	color: black;
+}
+.navbar-brand{
+	display: flex;
+	align-items: center;
+}
 
 
 
@@ -22,11 +35,49 @@ h1, h2, h3, h4, h5, h6, p{
 	background-position: bottom;
 	background-size: cover;
 	height: 100vh;
+
+}
+.col-registrate{
+	padding: 0;
 }
 .registrate{
 	background-color: #f7b617; /*amarillo*/
+	margin: 20vh 0;
+	padding: 30px;
 }
 
+.registrate h4{
+	display: inline-block;
+	padding: 5px;
+	margin: 15px 0;
+}
+.registrate h4>img{
+	display: inline-block;
+}
+p#reg{
+	margin-bottom: 20px;
+}
+.registrate .div-registro{
+	display: flex;
+	flex-direction: row;
+}
+.registrate .div-registro p{
+	margin: 0 30px;
+}
+.registrate .div-registro input{
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid white;
+	width: 30%;
+}
+.registrate button{
+	border: none;
+	padding: 5px 20px;
+	margin: 20px 0 0 0;
+	background-color: white;
+	border-radius: 4px;
+	font-weight: bold;
+}
 
 /***************************INFORMACION******************************/
 .informacion{
@@ -34,6 +85,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .info-marco{
 	border: 1px solid white;
+	margin: 5vh 0;
 }
 
 
