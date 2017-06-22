@@ -35,13 +35,13 @@ var funcionError = function(error){
 }
   var map = new google.maps.Map(document.getElementById('map'), {
     mapTypeControl: false,
-    center: {lat: -9.1191427, lng: -77.0349046},
-    zoom: 5
+    center: {lat: -33.5191427, lng: -71.0349046},
+    zoom: 6
   });
 
   new AutocompleteDirectionsHandler(map);
 
-  buscar();
+  //buscar();
 }
 
  /**
