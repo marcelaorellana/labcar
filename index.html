@@ -10,7 +10,7 @@
 	<!-- Fontawesome -->
 	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
 	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
 	
 	<link rel="stylesheet" href="assets/css/iconos/style.css">
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -108,27 +108,48 @@
   </section>
 
   <section class="tarifa container-fluid">
-  	<div class="row">
-  		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-  			<h3>Tarifas</h3>
-  			<p>Consulta las tarifas LabCar aquí</p>
-  			<div class="origen-div">
-  			  <img src="assets/img/circulo.png" alt="" class="img-responsive">
-  			  <input type="text">
-  			</div>
-  			<div class="destino div">
-  				<img src="assets/img/flecha.png" alt="" class="img-responsive">
-  				<input type="text">
-  			</div>
-  			<button id="rutaId">¡Traza Ruta!</button>
-  		</div>
-  		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-  			<div class="map">
-  				
-  			</div>
-  		</div>
-  	</div>
+    <div class="container">
+    	<div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 direccion">
+            <div class="tarifa-centro">
+              <h3>Tarifas</h3>
+              <p>Consulta las tarifas LabCar aquí</p>
+              <div class="ori-des">
+                <img src="assets/img/circulo.png" alt="" class="img-responsive">
+                <input id="origin-input" class="controls" type="text" placeholder="Enter an origin location">
+              </div>
+              <div class="ori-des">
+                <img src="assets/img/flecha.png" alt="" class="img-responsive">
+                <input id="destination-input" class="controls" type="text" placeholder="Enter a destination location">
+              </div>
+              <div class="boton-tarifa">
+                <button id="ruta" class="cont">¡Traza Ruta!</button>  
+              </div> 
+            </div>
+        </div> 
+        <div class="hidden-xs hidden-sm col-md-6 col-lg-6">
+          <div id="mode-selector" class="controls">
+            <input type="radio" name="type" id="changemode-walking" checked="checked">
+            <label for="changemode-walking">Walking</label>
+
+            <input type="radio" name="type" id="changemode-transit">
+            <label for="changemode-transit">Transit</label>
+
+            <input type="radio" name="type" id="changemode-driving">
+            <label for="changemode-driving">Driving</label>
+          </div>
+        </div>
+        <div class="hidden-xs hidden-sm col-md-6 col-lg-6 mapa">
+          <div class="borde">
+            <div id="map">
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
   <section class="container-fluid footer-fluid">
   <footer class="container">
   	<div class="row">
@@ -137,14 +158,14 @@
   		</div>
   	</div>
   	<div class="row links-row">
-  		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 social-footer">
+  		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 social-footer">
   			<i class="fa fa-facebook" aria-hidden="true"></i>
   			<i class="fa fa-twitter" aria-hidden="true"></i>
   			<i class="fa fa-linkedin" aria-hidden="true"></i>
   			<i class="fa fa-apple" aria-hidden="true"></i>
   			<i class="fa fa-play" aria-hidden="true"></i>
   		</div>
-  		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+  		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
   			<ul>
   				<li><a href="#">Viaja</a></li>
   				<li><a href="#">Conduce</a></li>
@@ -168,7 +189,7 @@
   				<li><a href="#">Coders</a></li>
   			</ul>
   		</div>
-  		<div class="col-xs-2 col-sm-2 col-md-3 col-lg-3 store-footer">
+  		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 store-footer">
   			<img src="assets/img/app-store.png" alt="app-store" class="img-responsive">
   			<img src="assets/img/google-play.png" alt="google-play" class="img-responsive">
   		</div>
@@ -182,6 +203,8 @@
   </footer>
   </section>
  	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdpzdtJoddyxhVn10BB-YagUIUCcHZzic&libraries=places&callback=initMap"
+        async defer></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Bootstrap Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

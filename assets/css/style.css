@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Montserrat', sans-serif;
 }
 body{
 	background-color: pink;
@@ -146,7 +147,60 @@ p#reg{
 .tarifa{
 	background-color: #f7b617; /*amarillo*/
 }
+.direccion{
+	padding: 5vh 0;
+	display: flex;
+	justify-content: center;
+}
+.tarifa-centro{
+    width: 80%;
+}
+.direccion h3, .direccion p{
+	
+}
+.ori-des{
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+.ori-des input[type=text]{
+	width: 90%;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 4px;
+	margin: 0 20px;
+	padding: 5px;
+}
+.direccion button{
+	background-color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 2px;
+	padding: 10px 25px;
+	
+}
+.boton-tarifa{
+	text-align: center;
+}
+.direccion img{
+	width: 20px;
+	height: 20px;
+}
 
+#map{ 
+      width: 100%;
+      height: 55vh;
+      border: 1px solid white;
+    }
+.borde{
+	padding: 8px;
+	border: 1px solid white;
+	width: 75%;
+	margin: 30px;
+}
 /********************************FOOTER************************/
 .footer-fluid{
 	background-color: #2b2b2b; /*gris oscuro*/
@@ -190,6 +244,9 @@ footer ul>li{
 	margin-top: 20px;
 }
 @media (max-width: 992px) { 
+	.links-row{
+		display: flex;
+	}
 	.links-row [class*="col-"]{
 		display: inline;
 	}
