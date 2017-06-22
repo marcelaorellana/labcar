@@ -3,9 +3,7 @@
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
 }
-body{
-	background-color: pink;
-}
+
 h1, h2, h3, h4, h5, h6, p{
 	color: white;
 	padding: 0;
@@ -48,7 +46,7 @@ h1, h2, h3, h4, h5, h6, p{
 .registrate{
 	background-color: #f7b617; /*amarillo*/
 	margin: 20vh 0;
-	padding: 30px;
+	padding: 40px;
 }
 
 .registrate h4{
@@ -79,10 +77,15 @@ p#reg{
 .registrate button{
 	border: none;
 	padding: 5px 20px;
-	margin: 20px 0 0 0;
+	margin: 40px 0 0 0;
 	background-color: white;
 	border-radius: 4px;
 	font-weight: bold;
+	color: #2b2b2b; /*gris oscuro*/;
+}
+.registrate button:hover{
+	color: white;
+	background-color: #727171; /*gris*/
 }
 
 /***************************INFORMACION******************************/
@@ -146,6 +149,9 @@ p#reg{
 	font-weight: bold;
 	font-size: 16px;
 }
+.conduce button:hover{
+	background-color: #f2bf43;
+}
 
 /******************************TARIFA*******************************/
 .tarifa{
@@ -178,6 +184,9 @@ p#reg{
 	margin: 0 20px;
 	padding: 5px;
 }
+.ori-des input:focus{
+	 outline: none;
+}
 .direccion button{
 	background-color: white;
 	font-weight: bold;
@@ -185,6 +194,10 @@ p#reg{
 	border-radius: 2px;
 	padding: 10px 25px;
 	
+}
+.direccion button:hover{
+	color: white;
+	background-color: #727171; /*gris*/
 }
 .boton-tarifa{
 	text-align: center;
@@ -215,13 +228,22 @@ footer{
 footer a, footer i{
 	color: white;
 }
+footer i{
+	padding: 0 1px 0 0;
+}
+footer i:hover{
+	color: #f7b617; /*amarillo*/
+}
 footer ul{
     list-style:none;
 }
 footer ul>li{
 	font-size: 14px;
 	padding: 5px;
-
+}
+footer ul>li>a:hover{
+	text-decoration: none;
+	color: #f7b617; /*amarillo*/
 }
 .footer-logo{
 	padding: 30px;
@@ -246,6 +268,7 @@ footer ul>li{
 .store-footer img{
 	width: 50%;
 	margin-top: 20px;
+	cursor:pointer;
 }
 @media (max-width: 992px) { 
 	.links-row{

@@ -2,7 +2,7 @@ function initMap() {
 
     var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 5,
-    center: {lat: -9.1191427, lng: -77.0349046},
+    center: {lat: -9.1191427, lng: -77.0349046}, 
     mapTypeControl: false,
     zoomControl: false,
     streetViewControl: false
@@ -20,7 +20,7 @@ function initMap() {
 var funcionExito = function(posicion){
   latitud = posicion.coords.latitude;
   longitud = posicion.coords.longitude;
-   var image = 'http://www.adktrailmap.com/webmap/images/biking.png';
+   var image = 'assets/img/push-pin-4.png';
   var miUbicacion = new google.maps.Marker({
     position: {lat: latitud, lng: longitud},
     animacion: google.maps.Animation.DROP,
@@ -41,7 +41,7 @@ var funcionError = function(error){
 
   new AutocompleteDirectionsHandler(map);
 
-  //buscar();
+  buscar();
 }
 
  /**
